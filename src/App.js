@@ -37,6 +37,7 @@ const handleInputChange = async (e,index) =>{
 const adicionarUsuario = async ()=>{
   await db.ref(base).push(usuario);
   limparCampos();
+  listarUsuarios();
 }
 const listarUsuarios = async () =>{
   let lista = [];  
